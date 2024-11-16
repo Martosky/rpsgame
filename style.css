@@ -1,3 +1,11 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: blanchedalmond;
+    border: 4px dotted black;
+}
