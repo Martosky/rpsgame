@@ -4,8 +4,37 @@
 body{
     margin: 0;
     padding: 0;
+    height: 100vh;
     box-sizing: border-box;
     overflow: hidden;
     background-color: blanchedalmond;
     border: 4px dotted black;
+}
+h1{
+  text-align: center;
+}
+
+main{
+    width: 80%;
+    margin:0 auto ;
+    padding: 20px;
+}
+
+details{
+    width: 100%;
+    padding: 10px;
+    background-color: orange;
+    color: black;
+    border: 2px solid orangered;
+    border-radius: 20px;
+}
+
+details summary{
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+details ul li{
+    list-style-type: none;
 }
