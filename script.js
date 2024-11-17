@@ -6,3 +6,9 @@ const scissorsBtn = document.getElementById("scissors-btn");
 const resultMsg = document.getElementById("result-msg");
 const winnerMsg = document.getElementById("winner-msg");
 const resetBtn = document.getElementById("reset-btn")
+
+function checkPlayerChoice(){
+    return(
+        ()
+    )
+}
