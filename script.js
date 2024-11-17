@@ -13,6 +13,9 @@ function getRandomComputerResult(){
     return Options[randomCheck]
 }
 
+let pleayerSCore = 0;
+let computerScore = 0;
+
 function checkPlayerChoice(){
     return(
         (player=="rock")
