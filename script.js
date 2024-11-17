@@ -9,6 +9,6 @@ const resetBtn = document.getElementById("reset-btn")
 
 function checkPlayerChoice(){
     return(
-        ()
+        (player=="rock")
     )
 }
