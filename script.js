@@ -16,8 +16,14 @@ function getRandomComputerResult(){
 let pleayerSCore = 0;
 let computerScore = 0;
 
-function checkPlayerChoice(){
+function hasPlayerWOn(player, computer){
     return(
-        (player=="rock")
+        (player === "Rock" && computer === "Scissors") ||
+        (player === "Scissors" && computer === "Paper") ||
+        (player === "Paper" && computer === "Rock")
     )
+}
+
+function displayGameResult(){
+    const computerREsult = getRandomComputerResult()
 }
