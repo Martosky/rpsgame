@@ -7,6 +7,7 @@ const scissorsBtn = document.getElementById("scissors-btn");
 const resultMsg = document.getElementById("result-msg");
 const winnerMsg = document.getElementById("winner-msg");
 const resetBtn = document.getElementById("reset-btn");
+const payerOption =document.querySelector(".payer-option")
 
 function getRandomComputerResult(){
     let Options = ["Rock","Paper","Scissors"];
@@ -43,10 +44,7 @@ function showRoundResult(userOption){
     playerGameScore.innerHTML = playerSCore;
     computerGameScore.innerHTML = computerScore;
 
-    if(playerSCore === 3){
-        winnerMsg.innerText = "Player has won the game!";
-
-    }
+    
 }
 
 rockBtn.addEventListener("click", function(){

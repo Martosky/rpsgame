@@ -72,6 +72,10 @@ details ul li{
     font-size: 17px;
     border: 2px solid orangered;
     border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    transform: scale(1.2);
 }
 
 #reset-btn{
