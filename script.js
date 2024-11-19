@@ -25,7 +25,7 @@ function hasPlayerWOn(player, computer){
     )
 }
 
-function getRoundResul(userOption){
+function getRoundResult(userOption){
     const computerResult = getRandomComputerResult();
     if(hasPlayerWOn(player, computerResult)){
         playerSCore++;
@@ -36,4 +36,10 @@ function getRoundResul(userOption){
         computer++;
         return `Computer wins! ${computerResult} beats ${userOption}`
     }
+}
+
+function showRoundResult(userOption){
+    resultMsg.innerText = getRoundResult(userOption)
+    playerGameScore.innerHTML = playerSCore;
+    computerGameScore.innerHTML = computerScore;
 }
