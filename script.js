@@ -1,5 +1,6 @@
 
-const playerScore =document.getElementById("player-score")
+const playerGameScore =document.getElementById("player-score");
+const computerGameScore = document.getElementById("computer-score")
 const rockBtn = document.getElementById("rock-btn");
 const paperBtn = document.getElementById("paper-btn");
 const scissorsBtn = document.getElementById("scissors-btn");
@@ -13,7 +14,7 @@ function getRandomComputerResult(){
     return Options[randomCheck]
 }
 
-let pleayerSCore = 0;
+const playerSCore = 0;
 let computerScore = 0;
 
 function hasPlayerWOn(player, computer){
@@ -24,6 +25,15 @@ function hasPlayerWOn(player, computer){
     )
 }
 
-function displayGameResult(){
-    const computerREsult = getRandomComputerResult()
+function getRoundResul(userOption){
+    const computerResult = getRandomComputerResult();
+    if(hasPlayerWOn(player, computerResult)){
+        playerSCore++;
+        return `Player wins! ${userOption} beats ${computerResult}`
+    } else if(computerResult === userOption){
+        return `It's a tie! Both choose ${userOption}`
+    }else{
+        computer++;
+        return `Computer wins! ${computerResult} beats ${userOption}`
+    }
 }
