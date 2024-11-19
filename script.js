@@ -42,4 +42,21 @@ function showRoundResult(userOption){
     resultMsg.innerText = getRoundResult(userOption)
     playerGameScore.innerHTML = playerSCore;
     computerGameScore.innerHTML = computerScore;
+
+    if(playerSCore === 3){
+        winnerMsg.innerText = "Player has won the game!";
+
+    }
 }
+
+rockBtn.addEventListener("click", function(){
+    showRoundResult("Rock")
+})
+
+paperBtn.addEventListener("click", function(){
+    showRoundResult("Paper")
+})
+
+scissorsBtn.addEventListener("click", function(){
+    showRoundResult("SCissors")
+})
