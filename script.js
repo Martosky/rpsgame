@@ -65,8 +65,10 @@ scissorsBtn.addEventListener("click", function(){
 })
 
 resetBtn.addEventListener("click", function(){
-    playerGameScore.innerHTML = 0
-    computerGameScore.innerHTML = 0
+    playerScore = 0;
+    computerScore = 0
+    playerGameScore.innerHTML = playerScore;
+    computerGameScore.innerHTML = computerScore;
     playerOptionbox.style.display = "Block";
     resetBtn.style.display = "none"
     resultMsg.innerText = ""
