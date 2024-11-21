@@ -83,3 +83,7 @@ details ul li{
     margin: 20px auto;
     
 }
+
+.grid{
+    display: grid;
+}
